@@ -8,7 +8,7 @@ spark = SparkSession.builder \
                     .getOrCreate()
 #master spark://13.59.151.161:7077
 # Import the PySpark module
-file_path='file:///spark-examples/proj2/framingham.csv'
+file_path='file:framingham.csv'
 data = spark.read.csv(file_path,
                          sep=',',
                          header=True,
